@@ -1,12 +1,13 @@
-def calculate(principal,anual_rate,loan_term):
-    no_of_payments = loan_term * 12
-    monthly_rate = anual_rate / 12
-    if anual_rate == 0:
-        monthly_payment = principal/no_of_payments
+def calculate(principal,annual_rate,loan_term):
+    no_payments = loan_term * 12
+    monthly_rate = annual_rate / 12
+    if annual_rate == 0:
+        monthly_payment = principal/no_payments
     else:
-        monthly_payment = (principal * monthly_rate)/(1-(1+monthly_rate)**-1)
+        rP = monthly_rate * principal
+        rN = (1 + monthly_rate)**(-1 * no_payments)
+        monthly_payment = rP/(1-rN)
 
     return monthly_payment
 
 
-print(calculate(200000, 0.05,30))
