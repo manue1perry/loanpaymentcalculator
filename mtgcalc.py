@@ -8,4 +8,4 @@ def calculate(principal,anual_rate,loan_term):
     return monthly_payment
 
 
-print(calculate(200,000, 0.05,30))
+print(calculate(200000, 0.05,30))
