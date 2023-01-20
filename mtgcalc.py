@@ -1,4 +1,4 @@
-def calculate(principal,annual_rate,loan_term):
+def monthly_payment_calc(principal,annual_rate,loan_term):
     no_payments = loan_term * 12
     monthly_rate = annual_rate / 12
     if annual_rate == 0:
