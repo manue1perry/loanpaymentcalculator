@@ -18,8 +18,8 @@ def monthly_payment_calc(principal,monthly_rate,no_payments):
     return monthly_payment
 
 #test
-monthly_payment = monthly_payment_calc(principal,annual_rate,no_payments)
-print("Your monthly payment will be {monthly_payment}".format(monthly_payment=monthly_payment))
+monthly_payment = monthly_payment_calc(principal,monthly_rate,no_payments)
+print("Your monthly payment will be ${monthly_payment}".format(monthly_payment=monthly_payment))
 
 def interest(principal, monthly_rate, monthly_payment, no_payments_made, no_payments):
     
