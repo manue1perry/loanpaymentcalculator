@@ -1,7 +1,7 @@
-principal = 200000
-annual_rate = 0.05
-years = 30
-no_payments_made = 15
+principal = input("How much did you or do you intend to borrow?")
+annual_rate = input("What is the annual rate?")
+years = input("What is the loan term?")
+no_payments_made = input("Have you made any payments so far")
 
 no_payments = years * 12
 monthly_rate = annual_rate / 12
