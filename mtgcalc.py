@@ -1,7 +1,12 @@
-principal = input("How much did you or do you intend to borrow?")
-annual_rate = input("What is the annual rate?")
-years = input("What is the loan term?")
-no_payments_made = input("Have you made any payments so far")
+principal_str = input("How much did you or do you intend to borrow?\n")
+annual_rate_str = input("What is the annual rate?\n")
+years_str = input("What is the loan term?\n")
+no_payments_made_str = input("Have you made any payments so far?\n")
+
+principal = float(principal_str)
+annual_rate = float(annual_rate_str)
+years = float(years_str)
+no_payments_made = float(no_payments_made_str)
 
 no_payments = years * 12
 monthly_rate = annual_rate / 12
@@ -19,7 +24,7 @@ def monthly_payment_calc(principal,monthly_rate,no_payments):
 
 #test
 monthly_payment = monthly_payment_calc(principal,monthly_rate,no_payments)
-print("Your monthly payment will be ${monthly_payment}".format(monthly_payment=monthly_payment))
+print("Your monthly payment is or will be ${monthly_payment}".format(monthly_payment=monthly_payment))
 
 def interest(principal, monthly_rate, monthly_payment, no_payments_made, no_payments):
     
